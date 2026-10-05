@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    line-height: 1.6;
+    background-color: rgb(62, 142, 200);
+}
+
+.gullfoss-page {
+    background-color: lightskyblue;
+}
+
+.barnafoss-page {
+    background-color: lightskyblue;
+}
+
+.dettifoss-page {
+    background-color: lightskyblue;
+}
+
+header {
+    background-color: blue;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.intro {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.intro h1 {
+    margin-top: 0;
+}
+
+.fossar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.foss-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.foss-box img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.foss-box h2 {
+    margin-bottom: 10px;
+}
+
+.foss-box a {
+    color: #173b3f;
+    font-weight: bold;
+}
+
+.page-intro {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.page-intro h1 {
+    margin-top: 0;
+}
+
+.foss-info {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.foss-info img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #173b3f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #285c61;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 30px;
+    text-align: center;
+    background-color: #173b3f;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+
+    .fossar {
+        grid-template-columns: 1fr;
+    }
+
+    .foss-box img {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .intro,
+    .page-intro,
+    .foss-info {
+        padding: 25px;
+    }
+}
